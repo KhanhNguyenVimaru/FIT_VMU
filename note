@@ -1,0 +1,27 @@
+FIT_VMU/
+│    
+├── APIs/                   #file này chứa các câu lệnh CRUD, xử lý logic PHP
+│   ├── student/            #các folder bên trong đại diện cho một table/đối tượng 
+│   │   ├── add.php         #các file logic
+│   │   ├── update.php
+│   │   ├── delete.php
+│   │   └── get.php
+│
+├── database/               #folder này chứa database
+│   └── db.database  
+│
+├── view/                   #folder này chứa các file giao diện UI mặc định, các mảnh có sẵn chỉ việc ghép vào
+│   ├── component/          #các thành phần mặc định trong giao diện
+│   │   ├── header.php
+│   │   └── footer.php      
+│   ├── base_layout.php     #các file giao diện được tạo tại đây
+│   └── assets/             #các file mặc định cho UI được tạo tại đây
+│       │   └── main.js
+│       └── css/
+│           └── style.css
+│
+├── connect_db.php          #file lết nối database tại đây
+├── index.php               #giao diện nguồn ở đây
+├── main.js                 #các JS chính được tạo ở đây
+
+#CÁC IMPORT ĐƯỢC LƯU TẠI ĐÂY
