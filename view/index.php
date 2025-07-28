@@ -15,6 +15,7 @@
 </head>
 <body>
     <?php include 'component/header.php'; ?>
+    <div class="container" style="height: 90vh;"></div>
     <!-- giao diện cho container -->
     <?php include 'component/footer.php'; ?>
 </body>

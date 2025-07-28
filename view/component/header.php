@@ -3,7 +3,7 @@
         <div class="d-flex align-items-center justify-content-between" style="width:900px; height:100%">
             <div style="height: 100%" class="d-flex align-items-center">
                 <img src="component/logo_vmu.png" alt="Logo Đại học Hàng Hải Việt Nam" style="width:70px; height:70px">
-                <div class="d-flex justify-content-center align-items-center" style="height: 70px; margin-left:12px">
+                <div class="d-flex justify-content-center align-items-center" style="height: 70px; margin-left:14px">
                     <div class="d-flex flex-column">
                         <span style="font-size:18px; font-family:bahnschrift; font-weight:bold; letter-spacing: 0.7px; line-height: 1.1">TRƯỜNG ĐẠI HỌC HÀNG HẢI VIỆT NAM</span>
                         <span style="font-size:18px; font-family:bahnschrift; font-weight:bold; letter-spacing: 0.7px;">KHOA CÔNG CÔNG NGHỆ THÔNG TIN</span>
@@ -12,7 +12,6 @@
             </div>
             <div style="height: 100%" class="d-flex align-items-center justify-content-center">
                 <div class="d-flex flex-column align-items-end gap-2">
-                    <!-- 2 flag trên 1 hàng -->
                     <div class="d-flex justify-content-center gap-3">
                         <a href="#" title="Tiếng Việt">
                             <img src="https://flagcdn.com/w40/vn.png" alt="VN Flag" style="width: 28px; height: 18px;">
@@ -22,10 +21,9 @@
                         </a>
                     </div>
 
-                    <!-- Ô input bên dưới -->
-                    <div class="position-relative" style="width: 160px;">
-                        <input type="text" class="form-control form-control-sm" placeholder="Search..." style="padding-right: 0px;">
-                        <i class="bi bi-search position-absolute" style="top: 50%; right: 8px; transform: translateY(-50%);"></i>
+                    <div class="position-relative" style="width: 200px;">
+                        <input type="text" class="form-control form-control-sm" placeholder="Search..." style="padding-right: 0px; font-family:'Times New Roman', Times, serif; font-size:14px">
+                        <i class="bi bi-search position-absolute" style="top: 46%; right: 8px; transform: translateY(-50%); cursor:pointer"></i>
                     </div>
                 </div>
             </div>
@@ -61,7 +59,6 @@
             <a href="#" class="nav-link">Sinh viên <i style="font-size: 10px; color:lightgray" class="bi bi-chevron-down"></i></a>
             <ul class="dropdown-menu">
                 <li><a href="#">Học bổng</a></li>
-                <li><a href="#">Thông tin tuyển dụng</a></li>
                 <li><a href="#">Đoàn thanh niên</a></li>
             </ul>
         </li>
