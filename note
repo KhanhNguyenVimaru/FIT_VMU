@@ -21,7 +21,6 @@ FIT_VMU/
 │           └── style.css
 │
 ├── connect_db.php          #file lết nối database tại đây
-├── index.php               #giao diện nguồn ở đây
 ├── main.js                 #các JS chính được tạo ở đây
 
 #CÁC IMPORT ĐƯỢC LƯU TẠI ĐÂY

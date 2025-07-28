@@ -1,5 +1,6 @@
 <?php 
-    include 'connect_db.php' // kết nối database ở đấy, địa chỉ nằm ở ngoài folder thêm ..
+    include '../connect_db.php'     // kết nối database ở đấy, địa chỉ nằm ở ngoài folder thêm ../
+                                    // nếu 2 cấp thì ta sẽ viết là ../../ 
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,10 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-    <?php include 'view/component/header.php'; ?>
+    <?php include 'component/header.php'; ?>
     <!-- giao diện cho container -->
-    <?php include 'view/component/footer.php'; ?>
+    <?php include 'component/footer.php'; ?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<script src="main.js"></script>
+<script src="../main.js"></script>
 </html>
