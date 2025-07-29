@@ -47,13 +47,16 @@
             </div>
         </div>
         <hr style="width:100%; color:#f2f3f5">
-        <div style="width: 100%">
+        <div style="width: 100%; display:flex; justify-content:space-between; padding-right:30px">
             <div class="col-12 text-start">
                 <div>
                     <p class="mb-2" style="font-family:'Roboto', sans-serif;">© 2025 Khoa Công nghệ Thông tin, Trường Đại học Hàng hải Việt Nam</p>
                     <p class="mb-2" style="font-family:'Roboto', sans-serif;">Địa chỉ: Tầng 2 4 nhà A4, Số 484 Lạch Tray, Lê Chân, Hải Phòng</p>
                 </div>
             </div>
+            <a href="">
+                <i style="font-size: 28px; color:white" class="bi bi-facebook"></i>
+            </a>
         </div>
     </div>
 </div>
