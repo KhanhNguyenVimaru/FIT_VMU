@@ -1,3 +1,6 @@
+<!-- Google Fonts: Roboto -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 <header class="d-flex flex-column justify-content-center align-items-center py-0" id="nav-header">
     <div class="d-flex justify-content-center" style="width:100%; height:100px; background-color:white;">
         <div class="d-flex align-items-center justify-content-between" style="width:900px; height:100%">
@@ -5,8 +8,12 @@
                 <img src="component/logo_vmu.png" alt="Logo Đại học Hàng Hải Việt Nam" style="width:70px; height:70px">
                 <div class="d-flex justify-content-center align-items-center" style="height: 70px; margin-left:14px">
                     <div class="d-flex flex-column">
-                        <span style="font-size:18px; font-family:bahnschrift; font-weight:bold; letter-spacing: 0.7px; line-height: 1.1">TRƯỜNG ĐẠI HỌC HÀNG HẢI VIỆT NAM</span>
-                        <span style="font-size:18px; font-family:bahnschrift; font-weight:bold; letter-spacing: 0.7px;">KHOA CÔNG CÔNG NGHỆ THÔNG TIN</span>
+                        <span style="font-size:18px; font-family:'Roboto', sans-serif; font-weight:bold; letter-spacing: 0.7px; line-height: 1.1">
+                            TRƯỜNG ĐẠI HỌC HÀNG HẢI VIỆT NAM
+                        </span>
+                        <span style="font-size:18px; font-family:'Roboto', sans-serif; font-weight:bold; letter-spacing: 0.7px;">
+                            KHOA CÔNG NGHỆ THÔNG TIN
+                        </span>
                     </div>
                 </div>
             </div>
@@ -22,12 +29,11 @@
                     </div>
 
                     <div class="position-relative" style="width: 200px;">
-                        <input type="text" class="form-control form-control-sm" placeholder="Search..." style="padding-right: 0px; font-family:'Times New Roman', Times, serif; font-size:14px">
+                        <input type="text" class="form-control form-control-sm" placeholder="Search..." style="padding-right: 0px; font-family:'Roboto', sans-serif; font-size:14px">
                         <i class="bi bi-search position-absolute" style="top: 46%; right: 8px; transform: translateY(-50%); cursor:pointer"></i>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <ul class="nav">
@@ -84,16 +90,6 @@
                 <li><a href="#">Nghiên cứu khoa học</a></li>
             </ul>
         </li>
-        <!-- <li class="nav-item dropdown">
-            <a href="#" class="nav-link">Admin</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Đăng bài</a></li>
-                <li><a href="#">Duyệt bài</a></li>
-                <li><a href="#">Cập nhật cơ cấu</a></li>
-                <li><a href="#">Cập nhật đội ngũ</a></li>
-                <li><a href="#">Cập nhật đào tạo</a></li>
-            </ul>
-        </li> -->
     </ul>
 </header>
 
@@ -106,14 +102,9 @@
         --font-size: 14px;
     }
 
-    .nav-link:hover,
-    .nav-link:focus,
-    .nav-link:active {
-        color: white !important;
-    }
-
     #nav-header {
         background-color: var(--blackBlue);
+        font-family: 'Roboto', sans-serif;
     }
 
     .nav {
@@ -133,12 +124,18 @@
 
     .nav-link {
         color: white;
-        font-family: "Times New Roman", serif;
+        font-family: 'Roboto', sans-serif;
         font-size: var(--font-size);
         padding: 8px 18px;
         display: block;
         text-decoration: none;
         transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus,
+    .nav-link:active {
+        color: white !important;
     }
 
     .nav-item:hover,
@@ -163,7 +160,7 @@
         list-style: none;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         z-index: 1000;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 14px;
         border-radius: 4px;
         opacity: 0;
@@ -184,5 +181,6 @@
         display: block;
         white-space: nowrap;
         transition: background-color 0.2s ease, color 0.2s ease;
+        font-family: 'Roboto', sans-serif;
     }
 </style>
