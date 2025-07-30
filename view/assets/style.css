@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+.Container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+.turn {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+}
+.dot-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 70vh;
+  bottom: 0;
+  left: 30%;
+}
+.dot-container .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0 10px;
+  background-color: #292a2c; /* màu mờ */
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+.dot-container .dot:hover {
+  cursor: pointer;
+}
+.dot.active {
+  background-color: rgb(230, 238, 246);
+}
+.slider-track {
+  width: 300%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  z-index: 2;
+  border-radius: 50%;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0px;
+}
