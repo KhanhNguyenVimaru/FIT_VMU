@@ -22,9 +22,9 @@
           <ion-icon name="chevron-back-outline"></ion-icon>
         </button>
         <div class="slider-track">
-          <img src="./haha/img/anh1.avif" alt="anh 1" class="img active" />
-          <img src="./haha/img/anh2.avif" alt="anh 1" class="img" />
-          <img src="./haha/img/anh3.avif" alt="anh 1" class="img" />
+          <img src="component/img/anh1.avif" alt="anh 1" class="img active" />
+          <img src="component/img/anh2.avif" alt="anh 2" class="img" />
+          <img src="component/img/anh3.avif" alt="anh 3" class="img" />
         </div>
         <div class="dot-container">
           <span class="dot active" id = "0"></span>
