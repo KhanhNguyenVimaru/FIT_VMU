@@ -30,8 +30,10 @@ body {
   padding: 20px;
   width: 70vh;
   bottom: 0;
-  left: 30%;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 .dot-container .dot {
   height: 4px;
   width: 40px;
