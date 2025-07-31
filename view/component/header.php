@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-center" style="width:100%; height:100px; background-color:white;">
         <div class="d-flex align-items-center justify-content-between" style="width:920px; height:100%">
             <div style="height: 100%" class="d-flex align-items-center">
-                <img src="component/logo/logo_vmu.png" alt="Logo Đại học Hàng Hải Việt Nam" style="width:70px; height:70px">
+                <a href="../view/index.php"><img src="component/logo/logo_vmu.png" alt="Logo Đại học Hàng Hải Việt Nam" style="width:70px; height:70px"></a>
                 <div class="d-flex justify-content-center align-items-center" style="height: 70px; margin-left:14px">
                     <div class="d-flex flex-column">
                         <span style="font-size:18px; font-family:'Roboto', sans-serif; font-weight:bold; letter-spacing: 0.7px; line-height: 1.1">
