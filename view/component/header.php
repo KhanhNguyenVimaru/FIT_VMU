@@ -96,6 +96,7 @@
 <style>
     :root {
         --mainBlue: #2832c2;
+        --mainBlueLight: #1976d2;
         --fontGray: #6a6a6a;
         --whiteGray: #f2f3f5;
         --blackBlue: #27304D;
@@ -105,6 +106,7 @@
     #nav-header {
         background-color: var(--blackBlue);
         font-family: 'Roboto', sans-serif;
+        box-shadow: 0 2px 12px rgba(40,50,194,0.08);
     }
 
     .nav {
@@ -123,29 +125,41 @@
     }
 
     .nav-link {
-        color: white;
+        color: #fff;
         font-family: 'Roboto', sans-serif;
         font-size: var(--font-size);
         padding: 8px 18px;
         display: block;
         text-decoration: none;
-        transition: background-color 0.3s ease, color 0.3s ease;
+        transition: background-color 0.3s, color 0.3s;
+        position: relative;
     }
-
+    .nav-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width .3s;
+        position: absolute;
+        left: 0; bottom: 0;
+    }
+    .nav-link:hover::after {
+        width: 100%;
+    }
     .nav-link:hover,
     .nav-link:focus,
     .nav-link:active {
-        color: white !important;
+        color: #fff !important;
     }
 
     .nav-item:hover,
     .dropdown-menu li:hover {
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.08);
     }
-
     .nav-item:hover .nav-link,
     .dropdown-menu li:hover a {
-        color: white;
+        color: #fff;
     }
 
     .dropdown-menu {
@@ -158,29 +172,28 @@
         padding: 1px 0;
         margin: 0;
         list-style: none;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 24px rgba(40,50,194,0.08);
         z-index: 1000;
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
-        border-radius: 4px;
+        border-radius: 8px;
         opacity: 0;
         transform: translateY(-10px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
+        transition: opacity 0.3s, transform 0.3s;
     }
-
     .nav-item:hover>.dropdown-menu {
         display: block;
         opacity: 1;
         transform: translateY(0);
     }
-
     .dropdown-menu li a {
-        color: white;
+        color: #fff;
         text-decoration: none;
         padding: 8px 12px;
         display: block;
         white-space: nowrap;
-        transition: background-color 0.2s ease, color 0.2s ease;
+        transition: background 0.2s, color 0.2s;
         font-family: 'Roboto', sans-serif;
+        border-radius: 6px;
     }
 </style>

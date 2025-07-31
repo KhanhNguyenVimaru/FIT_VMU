@@ -64,50 +64,59 @@
 <style>
     :root {
         --mainBlue: #2832c2;
+        --mainBlueLight: #1976d2;
         --fontGray: #6a6a6a;
         --whiteGray: #f2f3f5;
         --blackBlue: #27304D;
         --font-size: 14px;
     }
-
     .footer {
+        background-color: var(--blackBlue);
+        color: var(--whiteGray);
+        box-shadow: 0 -2px 12px rgba(40,50,194,0.08);
         line-height: 1.6;
         font-family: 'Roboto', sans-serif;
     }
-
+    .footer span {
+        color: var(--mainBlueLight);
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 4px;
+        margin-bottom: 1rem;
+        display: inline-block;
+        background: none;
+    }
     .footer ul li {
         margin-bottom: 0.5rem;
     }
-
     .footer a.hover-link {
         color: var(--whiteGray);
-        transition: color 0.3s ease, transform 0.3s ease;
+        transition: color 0.3s, background 0.3s, padding-left 0.3s;
         font-family: 'Roboto', sans-serif;
+        border-radius: 4px;
+        padding: 2px 8px 2px 0;
+        display: inline-block;
     }
-
     .footer a.hover-link:hover {
-        color: var(--mainBlue);
-        transform: translateX(5px);
+        color: #fff;
+        background: var(--mainBlueLight);
+        padding-left: 12px;
     }
-
     .footer .bi-facebook {
-        transition: color 0.3s ease;
+        transition: color 0.3s;
     }
-
     .footer .bi-facebook:hover {
-        color: var(--mainBlue);
+        color: var(--mainBlueLight);
     }
-
     @media (max-width: 576px) {
         .footer {
             padding: 2rem 0;
             font-size: calc(var(--font-size) - 2px);
         }
-
         .footer .col-sm-3 {
             text-align: center;
         }
-
         .footer .col-12 {
             text-align: center;
         }
