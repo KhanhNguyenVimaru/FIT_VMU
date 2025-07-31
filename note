@@ -20,4 +20,10 @@ FIT_VMU/
 │   └── assets/             #các file mặc định cho UI được tạo tại đây, ưu tiên file responsive
 │       └── style.css
 
-#CÁC IMPORT ĐƯỢC LƯU TẠI ĐÂY
+#CÁC BƯỚC CÀI EDITOR JS: CÀI LẦN LƯỢT CÁC NPM SAU ĐÂY
+npm install @editorjs/paragraph
+npm install @editorjs/header
+npm install @editorjs/list
+npm install @editorjs/image
+npm install @editorjs/quote
+npm install @editorjs/embed

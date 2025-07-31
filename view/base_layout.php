@@ -1,5 +1,5 @@
 <?php 
-    include '../connect_db.php'     // kết nối database ở đấy, địa chỉ nằm ở ngoài folder thêm ../
+include '../database/connect_db.php'     // kết nối database ở đấy, địa chỉ nằm ở ngoài folder thêm ../
                                     // nếu 2 cấp thì ta sẽ viết là ../../ 
 ?> 
 <!DOCTYPE html>
@@ -18,5 +18,4 @@
     <?php include 'component/footer.php'; ?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<script src="../main.js"></script>
 </html>
