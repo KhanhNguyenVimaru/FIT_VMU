@@ -24,9 +24,9 @@ include '../database/connect_db.php'     // kết nối database ở đấy, đ�
         <ion-icon name="chevron-back-outline"></ion-icon>
       </button>
       <div class="slider-track">
-        <img src="component/img/anh1.avif" alt="anh 1" class="img active" />
-        <img src="component/img/anh2.avif" alt="anh 2" class="img" />
-        <img src="component/img/anh3.avif" alt="anh 3" class="img" />
+        <img src="component/img/carousel1.png" alt="anh 1" class="img active" />
+        <img src="component/img/carousel2.jpg" alt="anh 2" class="img" />
+        <img src="component/img/carousel3.gif" alt="anh 3" class="img" />
       </div>
       <div class="dot-container">
         <span class="dot active" id="0"></span>
@@ -39,7 +39,6 @@ include '../database/connect_db.php'     // kết nối database ở đấy, đ�
       </button>
     </div>
   </div>
-
   <?php include 'component/footer.php'; ?>
 
 </body>
