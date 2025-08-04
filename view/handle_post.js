@@ -45,3 +45,42 @@ const editor = new EditorJS({
     }
   }
 });
+
+  function saveNewPost() {
+        editor.save().then((editorData) => {
+            const title = document.getElementById('post-title').value.trim();
+            const category = document.getElementById('category').value;
+            const fileInput = document.getElementById('title-img');
+            const imageFile = fileInput.files[0] || null;
+
+            const postData = {
+                title: title,
+                category: category,
+                content: editorData,
+                imageName: imageFile ? imageFile.name : null 
+            };
+
+            console.log(postData);
+
+            
+            const formData = new FormData();
+            formData.append('data', JSON.stringify(postData));
+            if (imageFile) {
+                formData.append('image', imageFile);
+            }
+
+            // lưu bài viết ở đây
+            fetch('.php', {
+                method: 'POST',
+                body: formData
+            }).then(res => res.json())
+              .then(data => {
+                  console.log('Server trả về:', data);
+              }).catch(err => {
+                  console.error('Lỗi gửi dữ liệu:', err);
+              });
+        }).catch((error) => {
+            console.error('Lỗi khi lấy nội dung Editor.js:', error);
+        });
+    }
+ 

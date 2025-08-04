@@ -7,8 +7,9 @@
             </a>
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="nav-selection">
-                <li><a href="#" class="nav-link px-2 link-dark">Bài viết</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Sinh viên</a></li> 
+                <li><a href="index.php" class="nav-link px-2 link-dark">Trang giới thiệu</a></li>
+                <li><a href="manage_post.php" class="nav-link px-2 link-dark">Bài viết</a></li>
+                <li><a href="manage_user.php" class="nav-link px-2 link-dark">Sinh viên</a></li> 
                 <li><a href="#" class="nav-link px-2 link-dark">Giảng viên</a></li>
                 <li><a href="#" class="nav-link px-2 link-dark">Ngành</a></li>
             </ul>

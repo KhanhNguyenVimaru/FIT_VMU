@@ -22,12 +22,12 @@ include '../database/connect_db.php';
         }
 
         .create-post-container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             padding: 2rem;
             background: #fff;
             border-radius: 16px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
         }
 
         .create-post-container h4 {
@@ -67,13 +67,18 @@ include '../database/connect_db.php';
             position: relative;
             width: 100%;
         }
+
         .custom-file-input {
             opacity: 0;
             position: absolute;
-            left: 0; top: 0; width: 100%; height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
             cursor: pointer;
             z-index: 2;
         }
+
         .custom-file-label {
             display: flex;
             align-items: center;
@@ -89,16 +94,19 @@ include '../database/connect_db.php';
             min-height: 44px;
             height: 44px;
         }
+
         .custom-file-label:hover,
-        .custom-file-input:focus + .custom-file-label {
+        .custom-file-input:focus+.custom-file-label {
             border-color: #1976d2;
             box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.08);
             background: #f0f7ff;
         }
+
         .custom-file-label .icon {
             font-size: 1.2em;
             color: #1976d2;
         }
+
         .custom-file-label .file-name {
             color: #1976d2;
             font-weight: 500;
@@ -109,6 +117,7 @@ include '../database/connect_db.php';
             gap: 1rem;
             margin-bottom: 1.5rem;
         }
+
         .input-col {
             flex: 1;
         }
@@ -122,8 +131,8 @@ include '../database/connect_db.php';
 <body>
     <?php include 'component/manage_header.php'; ?>
 
-    <div id="new-post-container" style="min-height: 50vh; width: 100%; padding: 20px 20px; margin-top:10px; margin-bottom: 50px;">
-        <div class="create-post-container" style="min-height: 50vh !important;">
+    <div id="new-post-container" style="min-height: 100vh; width: 100%; padding: 20px 20px; margin-top:10px; margin-bottom: 50px;">
+        <div class="create-post-container" style="min-height: 100vh !important;">
             <h4 style="font-weight: b; color:black">Thêm bài viết mới</h4>
 
             <!-- Tiêu đề -->
@@ -157,23 +166,15 @@ include '../database/connect_db.php';
 
 
             <!-- Editor.js -->
-            <div id="editorjs"></div>
+            <div id="editorjs" style="font-size: 16px;">
+            </div>
+            <div style="width: 100%; justify-content:end">
+                <button class = "btn btn-primary" style="font-family: Roboto; font-size:14px" onclick="saveNewPost()">Tạo bài viết</button>
+            </div>
         </div>
     </div>
-
     <?php include 'component/footer.php'; ?>
 </body>
-<script>
-function updateFileName(input) {
-    const label = document.getElementById('file-label').querySelector('.file-name');
-    if (input.files && input.files.length > 0) {
-        label.textContent = input.files[0].name;
-    } else {
-        label.textContent = 'Chọn ảnh...';
-    }
-}
-</script>
-
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
@@ -189,5 +190,14 @@ function updateFileName(input) {
 
 <!-- Custom JS -->
 <script src="handle_post.js"></script>
-
+<script>
+    function updateFileName(input) {
+        const label = document.getElementById('file-label').querySelector('.file-name');
+        if (input.files && input.files.length > 0) {
+            label.textContent = input.files[0].name;
+        } else {
+            label.textContent = 'Chọn ảnh...';
+        }
+    }
+</script>
 </html>
