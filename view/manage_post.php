@@ -120,7 +120,7 @@ include '../database/connect_db.php';
 </head>
 
 <body>
-    <?php include 'component/header.php'; ?>
+    <?php include 'component/manage_header.php'; ?>
 
     <div id="new-post-container" style="min-height: 50vh; width: 100%; padding: 20px 20px; margin-top:10px; margin-bottom: 50px;">
         <div class="create-post-container" style="min-height: 50vh !important;">
